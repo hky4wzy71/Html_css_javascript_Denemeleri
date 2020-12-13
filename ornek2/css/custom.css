@@ -1,0 +1,71 @@
+body{
+    background-color: #353333;
+}
+header{
+    background:#F2F5F2;
+    padding: 10px;
+    margin: 0 auto;
+}
+header .logo{
+    width: 50px;;
+    margin: 10px auto;
+    
+}
+header nav ul{
+    width:400px;
+    height: 30px;
+    margin: 0px auto;
+}
+header nav ul li{
+    float: left;
+    padding: 10px;
+}
+header nav ul li a {
+    color:#99A09D;
+}
+header nav ul li a:hover{
+    color:#000000;
+}
+.slider{
+    height: 500px; background:url("../img/Alpha_cent.jpg")no-repeat center 40%; 
+    background-size:cover;
+    position: relative;
+}
+.slider p.text, .small-text{
+    position: absolute;
+    
+    transform: translate(-50% ,-50%);
+    color: #F9F5F6;
+    text-shadow: 1px 1px;
+    font-family:"alex-brush";
+}
+.slider p.text{
+    font-size: 45px;
+    top: 10%;
+    left: 50%;
+}
+
+.slider p.small-text{
+    font-size: 30px;
+    top: 60%;
+    left: 50%;
+}
+
+.content_sol{
+    margin: 10px;
+    width: 600px;
+    font-size: 20px;
+    text-align:center;
+    font-family:"advent-pro";
+    color: #E9E0E0;
+    float: left;
+}
+.content_sag{
+    width: 400px;
+    float: right;
+    background: url("../img/Alpha_cent.jpg");
+    background-size: cover;
+}
+
+
+

@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>yorum</title>
+    <meta charset="UTF-8">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+<link href="../css/reset.css" rel="stylesheet" type="text/css">
+    <script>
+    $(function(){
+        $(".gonder").click(function(){
+            var girdi = $("input[name=giris]").val();
+            console.log(girdi);
+        });
+    });
+    </script>
+</head>
+
+<body>
+    
+    <div class="header">
+  <h2>Scroll Down</h2>
+  <p>Scroll down to see the sticky effect.</p>
+</div>
+    <div id="navbar">
+                <a href="../index.html">Home</a>
+                <a href="hayati.html">Hayatı</a>
+                <a href="yorum.html">Yorum</a>
+            </div>
+    
+    
+    <div class="content">
+        <p style="text-align: center;
+                  font-size: 32px;">Sitemiz Nasıl olmuş ? </p>
+        <div id="top_left">
+            
+            
+            
+            <form action="../php/Hypertext_Preprocesso.php" method="POST" >
+                <div class="row">
+      <div class="col-25">
+        <label for="fname">Verilen konun özgün ve farklı olarak sunulması</label>
+      </div>
+      <div class="col-75">
+        <label><input type="radio" name="soru1" value="yes"> Evet bayıldım </label>
+          <label><input type="radio" name="soru1" value="no"> Hayır ama yinede iyiydi </label>
+      </div>
+    </div>
+                <div class="row">
+      <div class="col-25">
+        <label for="fname">İlk 13 ünitedeki teknik teknoloji ve kodların kullanılması</label>
+      </div>
+      <div class="col-75">
+        <label><input type="radio" name="soru2" value="yes"> Evet yeterli bence cocuk uğraşmıs </label>
+          <label><input type="radio" name="soru2" value="no"> Hayır Ajax nerde o kadar anlattım ? </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Sitenin eksiksiz sorunsuz ve tam olarak çalısması</label>
+      </div>
+      <div class="col-75">
+        <label><input type="radio" name="soru3" value="yes"> Evet Daha ne olsun </label>
+          <label><input type="radio" name="soru3" value="no"> Hayır ama yinede iyiydi </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">İçerik ve sayfa çeşitliliği sayısı</label>
+      </div>
+      <div class="col-75">
+        <label><input type="radio" name="soru4" value="yes"> Evet uygulama için yeterli </label>
+          <label><input type="radio" name="soru4" value="no"> Hayır ama yinede iyiydi </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Görsel tasarım, Çoklu ortam[multimedia] bileşenleri</label>
+      </div>
+      <div class="col-75">
+        <label><input type="radio" name="soru5" value="yes"> Evet Bravo </label>
+          <label><input type="radio" name="soru5" value="no"> Hayır ama yinede iyiydi </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Yorum </label>
+      </div>
+      <div class="col-75">
+        <textarea name="subject" placeholder="Sitemiz hakkında yorum yapabilirsiniz..." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Gönder">
+    </div>
+  </form>
+        </div>
+        
+    <div id="top_right">
+        <input type="text" name="giris">
+        <button type="submit" class="gonder" > Ajax ile yolla bakim Çalısıyo mu</button>
+        
+        </div>
+    
+    </div>
+</body>
+</html>
+
+

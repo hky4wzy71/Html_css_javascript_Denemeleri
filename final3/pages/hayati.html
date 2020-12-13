@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+<link href="../css/reset.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div class="header">
+  <h2>Scroll Down</h2>
+  <p>Scroll down to see the sticky effect.</p>
+</div>
+    
+    
+    
+    
+    
+    
+
+     <div id="navbar">
+                <a href="../index.html">Home</a>
+                <a href="hayati.html">Hayatı</a>
+                <a href="yorum.html">Yorum</a>
+            </div>
+
+    <div>
+    <video src="../video/yalan_dunya.mp4" 
+           style="width: 480px; 
+                  height: 360px;
+                  margin: 20px;
+                  "
+           controls> 
+    </video>
+        
+    <p style="display: block;
+              float: right;
+              text-align: center;
+              margin-top: 20px;
+              font-size: 32px;
+              margin-right:200px;
+              margin-top: 40px;
+              width: 500px;"> Sen beni gülünce mutlu mu sandın, yalandan yüzüme gülen dünyada. </p>
+    
+    </div>
+    
+    
+    
+    
+
+    
+    
+    
+    <div id="timeline">
+     <div class="timeline">
+                <div class="container left">
+                    <div class="content">
+                        <h1>1938</h1>
+                        <p>
+Babası bağlama ustası Muharrem Ertaş, annesi Döne Ertaş'tır. 8 yaşına kadar doğduğu köy olan Kırtıllar Köyü'nde yaşamış, sonrasında ailesi ile birlikte İbikli Köyü'ne yerleşmişlerdir. 12 yaşındayken annesi Döne'yi kaybetmiştir. 
+
+Ertaş, ilkokula gittiği yıllarda önce keman, sonra da bağlama çalmayı öğrendi.  </p>
+                    </div>
+                </div>
+            <div class="container right">
+                <div class="content">
+                    <h1>1955</h1>
+                    <p>Sanat hayatı
+Neşet Ertaş, Kırşehir ve ardından 2 yıl da Kırıkkale'de bulunduktan sonra 1957 yılının sonunda İstanbul'a gelerek Şen Çalar Plak'ta ilk plağını Neden Garip Garip Ötersin Bülbül adı ile babası Muharrem Ertaş'a ait bir türküyle çıkarır. Halk tarafından çok beğenilen bu plağı diğer plak, kaset ve halk konserleri takip eder. 2 yıl İstanbul'da çalıştıktan sonra Neşet Ertaş Ankara'ya yerleşir ve sahne hayatına burada devam eder.</p>
+                </div>
+            </div>
+            
+                <div class="container left">
+                    <div class="content">
+                        <h1>1962</h1>
+                        <p> 1962'de İzmir Narlıdere'de askerliğini yapar. Askerliğini yaptıktan sonra Ankara'da çalıştığı gazinoda Leyla isminde bir kızla tanışır ve hemen evlenir. Babası Muharrem Ertaş, Neşet'in bu evliliğine şiddetle karşı çıkar. Bu olaylardan sonra Neşet Ertaş ve Muharrem Ertaş uzun yıllar konuşmazlar</p>
+                    </div>
+                </div>
+                
+                
+                <div class="container right">
+                <div class="content">
+                    <h1>1970</h1>
+                    <p> Neşet Ertaş ve Leyla Ertaş'ın bu evlilikten Döne, Canan adında iki kız ve Hüseyin adında bir erkek çocukları olur. 7 yıl evli kaldıktan sonra 1970'lerin başlarında ayrılırlar. 1978 yılında alkol ve sigara kullanımından dolayı parmaklarından felç geçirir ve işsiz kalır. Kardeşinin daveti üzerine Almanya'ya gider.</p>
+                </div>
+            </div>
+        
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </div><!-- timeline end -->
+    </div>
+    
+    <div class="footer">
+  
+        <div id="navbar">
+                <a href="../main.html">Home</a>
+                <a href="hayati.html">Hayatı</a>
+                <a href="#contact">Yorum</a>
+            </div>
+    </div>
+    
+    <script>
+    /*NAVBAR*/
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>

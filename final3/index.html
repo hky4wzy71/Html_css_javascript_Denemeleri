@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div class="header">
+  <h2>Scroll Down</h2>
+  <p>Scroll down to see the sticky effect.</p>
+</div>
+
+<div id="navbar">
+                <a href="index.html">Home</a>
+                <a href="pages/hayati.html">Hayatı</a>
+                <a href="pages/yorum.html">Yorum</a>
+            </div>
+
+
+    
+    
+    
+    
+    <div class="content">
+        <div id="top_left">
+            <p id="baslık">Bozkırın Tezenesi</p>
+            
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                        <h2>Front Side</h2>
+                    </div>
+                    <div class="flip-box-back" style="align-self:  center;">
+                        <h2>Back Side</h2>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            <p class ="p1">Neşet Ertaş, ülkemizin en önemli halk müziği ustalarından, Türkmen-Abdal geleneğinin yakın geçmişteki en önemli ozanlarından biriydi. Babası Muharrem Ertaş gibi büyük bir ozanın yanında yetişmiş, bununla beraber öğrendiklerinin üzerine kendi hayatından süzdüğü birikimlerine de katarak erişilmesi güç bir noktaya varmıştı. Yüzlerce yıllık bir birikimin adeta somutlaşmış halini almış büyük bir ustaydı. </p>
+            
+            
+             <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                        <h2>Front Side</h2>
+                    </div>
+                    <div class="flip-box-back">
+                        <h2>Back Side</h2>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="p1"> Bugün onun eseri olan onlarca türkü, Türk Halk Müziği sanatçılarınca hemen her ortamda söyleniyor. Bu anlamda Muharrem Ertaş, Çekiç Ali, Hacı Taşan gibi içinden geldiği geleneğin büyük ustalarının mirası bugünkü halk müziğinin temelini oluşturuyor. Medyada çok yer bulamasa da Neşet Ertaş'ın içinden geldiği ozanlık geleneği bir şekilde devam ediyor. </p>
+        
+        
+        
+        
+        
+        </div><!--top_left end -->
+        
+        
+        
+        
+        <div id="top_right"> 
+            <button class="accordion">TÜRKÜLERİ</button>
+<div class="panel">
+    <p class="list">-Neşet Ertaş - Neredesin Sen</p>
+    <p class="list">-Neşet Ertaş - Ah Yalan Dünya</p>
+    <p class="list">-Neşet Ertaş - Zülüf Dökülmüş Yüze  </p>
+    <p class="list">-Neşet Ertaş - Gönül Dağı</p>
+    <p class="list">-Neşet Ertaş - Kendim ettim kendim buldum</p>
+    <p class="list">-Neset Ertas - Yazımı Kışa Çevirdin</p>
+    <p class="list">-Neşet Ertaş - Evvelim Sen Oldun </p>
+    
+</div>
+
+<button class="accordion">AİLESİ</button>
+<div class="panel">
+    <p class="list">Eş: Leyla Ertaş (e. 1960–1970)</p>
+    <p class="list">Çocuklar: Canan Ertaş, Hüseyin Ertaş, Döne Ertaş</p>
+    <p class="list">Muharrem Ertaş Babası</p>
+    
+</div>
+
+        
+        
+        </div><!--top_right end -->
+    
+    </div>
+
+    
+    <div class="footer">
+      <div id="navbar">
+           <ul>
+                <a href="index.html">Home</a>
+                <a href="pages/hayati.html">Hayatı</a>
+                <a href="pages/yorum.html">Yorum</a>
+            
+       </ul>
+        
+      </div>  
+        
+</div>
+    
+    
+    
+    
+<script>
+            /*NAVBAR*/
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+    
+    
+    
+    
+    
+            /*ACCIRDİON*/
+    var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</body>
+</html>

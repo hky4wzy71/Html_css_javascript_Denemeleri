@@ -1,0 +1,154 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color:#EDEDED;
+}
+header{
+    width: 100%;
+    height:80px;
+    background-color:#3D3B3B;
+}
+#banner{
+    position: absolute;
+    width: 280px;
+    height: 80px;
+}
+#buyukp{
+    margin: 10px;
+    width: 280px;
+    color: #E9E7E7;
+    font-size: 25px;
+    font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace"
+}
+#kucukp{
+    margin: 10px;
+    margin-left: 20px;
+    width: 280px;
+    color:#E9E7E7;
+    font-size: 20px;
+    font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace"
+}
+#menu ul{
+    width: 100%;
+    height:36px;
+    background-color:#000000;
+}
+#menu ul li{
+    float: left;
+    margin-right: 20px;
+    padding: 10px;
+    font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+    color: #E9E7E7;
+}
+#menu ul li:hover{
+    color: black;
+    background-color: #E9E7E7;
+}
+main{
+    margin: 0px auto;
+    width: 1200px;;
+    height: 600px;
+    background-color:#EDEDED;
+    background: url("../img/anasayfa.jpg")no-repeat center;
+    background-size: cover;
+}
+#mainust{
+    position: absolute;
+    font-size: 60px;
+    transform: translate(120%,320%);
+    color: gainsboro;   
+}
+#mainust p:hover{
+    color:#FFFFFF;
+    transition-duration: 1s;
+}
+#mainalt{
+    width: 700px;
+    position: absolute;
+    transform: translate(40%,200%);
+    
+    font-size: 30px;
+    color: gainsboro;
+}
+#mainalt p:hover{
+    color:#FFFFFF;
+    transition-duration: 1s;
+}
+#ana_alt{
+    background-color: gainsboro;
+    margin: 0px auto;
+    width: 1200px;
+    height: 600px;
+}
+#header_alt{
+    padding: 10px;
+    text-align: center;
+    font-size: 50px;
+    color: darkgrey;
+}
+.ana_alt_sol{
+    margin-left: 50px;
+    margin-top: 50px;
+    float: left;
+    width: 300px;
+    height: 400px;
+    border: #000000 solid 1px;
+}
+#ana_alt_sag{
+    margin: 50px;
+    float: right;
+    width: 300px;
+    height: 300px;
+    border: solid black 1px;
+}
+footer{
+    width: 100%;
+    height: 40px;
+    background-color:#000000;
+}
+#footer_sol{
+    padding: 12px;
+    float: left;
+    color: azure;
+    font-size: 16px;
+}
+#footer_sag a{
+    padding: 12px;
+    float: right;
+    color: azure;
+    font-size: 16px;
+}
+
+
+
+
+/*============================hakkımızda==================*/
+
+.container {
+    margin: 0 auto;
+    width: 1200px;
+    height: auto;
+    border: solid 1px black;
+    
+}
+#hakimizda_baslik{
+    text-align: center;
+    font-size: 35px;
+    padding-top: 30px;
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+    color:darkgray;
+}
+.tanitim{
+    margin:20px; 
+    width: 100%;
+    height: 200px;
+}
+.tanitim_p{
+    padding-right:20%;
+    padding-top: 5%;
+    float: right;
+    font-size: 23px;
+    color:limegreen;
+}
+
+
